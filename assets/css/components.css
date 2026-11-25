@@ -1,0 +1,533 @@
+/* ==========================================================
+   COMPONENTS
+   Komponen tambahan di atas style.css:
+   1. Language button (EN/ID)
+   2. Projects section
+   3. Love button (footer)
+   Ikon memakai Unicons & Boxicons dari CDN (lihat <head> index.html)
+   ========================================================== */
+
+/* ---------- 1. LANGUAGE BUTTON ---------- */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  background: none;
+  border: 1px solid var(--first-color);
+  border-radius: 2rem;
+  padding: 0.2rem 0.65rem;
+  margin-right: var(--mb-1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lang-btn:hover {
+  color: var(--first-color-lighter);
+  background-color: var(--first-color);
+}
+
+.lang-btn .uil {
+  font-size: 1.1rem;
+}
+
+/* ---------- 2. PROJECTS (compact list + detail panel) ---------- */
+/* Mobile/tablet : list ber-scroll internal, detail terbuka sebagai accordion
+   Desktop       : list di kiri, detail project aktif di panel kanan */
+.projects__toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: var(--mb-1);
+}
+
+.projects__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  white-space: nowrap;
+}
+
+.projects__label .uil {
+  font-size: 1.1rem;
+  color: var(--first-color);
+}
+
+.projects__select {
+  flex: 1;
+  max-width: 22rem;
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  background-color: var(--container-color);
+  border: 1px solid var(--first-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.projects__select:focus {
+  box-shadow: 0 0 0 2px var(--input-color);
+}
+
+.projects__panel {
+  position: relative;
+}
+
+.projects__list {
+  max-height: 30rem;
+  overflow-y: auto;
+  background-color: var(--container-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.project__item[hidden] {
+  display: none;
+}
+
+.project__item + .project__item {
+  border-top: 1px solid var(--input-color);
+}
+
+.project__head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: none;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: var(--body-font);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.project__head:hover {
+  background-color: var(--input-color);
+}
+
+.project__head-text {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  gap: 0.15rem;
+}
+
+.project__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  line-height: 1.3;
+}
+
+.project__sub {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.4rem;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.project__dot {
+  color: var(--first-color);
+}
+
+.project__arrow {
+  font-size: 1.25rem;
+  color: var(--first-color);
+  transition: transform 0.3s;
+}
+
+.project__item.is-active .project__head {
+  background-color: var(--input-color);
+}
+
+.project__item.is-active .project__name {
+  color: var(--first-color);
+}
+
+/* Detail (accordion di mobile) */
+.project__body {
+  display: none;
+  padding: 0.25rem 0.75rem 1rem;
+}
+
+.project__item.is-active .project__body {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.project__item.is-active .project__arrow {
+  transform: rotate(90deg);
+}
+
+/* Di mobile judul & client sudah tampil di header baris */
+.project__body .project__client,
+.project__body .project__title {
+  display: none;
+}
+
+.project__client {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.project__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  line-height: 1.3;
+}
+
+.project__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  font-size: var(--small-font-size);
+  color: var(--first-color-second);
+}
+
+.project__desc {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  text-align: justify;
+}
+
+.project__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project__tag {
+  font-size: var(--smaller-font-size);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  background: var(--input-color);
+  color: var(--first-color-second);
+  font-weight: var(--font-medium);
+}
+
+.project__resp-title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+}
+
+.project__resp {
+  padding-left: 1.25rem;
+  list-style: decimal;
+  display: grid;
+  gap: 0.4rem;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+/* Gambar project dinamis:
+   1 gambar = full width, 2 gambar = 2 kolom sama besar, dst.
+   (gambar yang gagal dimuat display:none, jadi tidak ikut dihitung kolom) */
+.project__gallery {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+/* Grid 6 kolom, lebar tiap gambar (--span) dihitung di main.js (layoutGallery)
+   1-3 gambar = 1 baris, 4 = 2+2, 5 = 3+2, 6 = 3+3, 7 = 3+2+2, dst. */
+.project__img,
+.project__img-empty {
+  grid-column: span var(--span, 6);
+}
+
+@media screen and (max-width: 767px) {
+  .project__gallery {
+    gap: 0.5rem;
+  }
+}
+
+.project__img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--scroll-thumb-color);
+  background-color: var(--body-color);
+  cursor: zoom-in;
+  transition: transform 0.3s;
+}
+
+.project__img:hover {
+  transform: scale(1.02);
+}
+
+.project__img.is-missing {
+  display: none;
+}
+
+/* Placeholder: tampil jika tidak ada gambar yang berhasil dimuat */
+.project__img-empty {
+  display: none;
+  aspect-ratio: 16 / 9;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 2px dashed var(--scroll-thumb-color);
+  border-radius: 0.75rem;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.project__img-empty .uil {
+  font-size: 1.5rem;
+}
+
+.project__gallery.is-empty .project__img-empty {
+  display: flex;
+}
+
+/* Lightbox (perbesar gambar) */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: zoom-out;
+}
+
+.lightbox.show {
+  display: flex;
+}
+
+.lightbox__img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- 3. LOVE BUTTON ---------- */
+.footer__love-icon {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.footer__love-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer__love-icon:active {
+  transform: scale(0.9);
+}
+
+/* Saat di-like, JS mengganti ikon ke Boxicons "bxs-heart" (hati penuh) */
+.footer__love-icon.liked {
+  color: var(--first-color);
+  animation: love-pop 0.35s ease;
+}
+
+@keyframes love-pop {
+  0%   { transform: scale(0.6); }
+  60%  { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+
+/* ---------- 4. HEADER SHRINK (tablet & desktop) ---------- */
+/* Di posisi paling atas navbar lebih tinggi + logo lebih besar.
+   Saat scroll (class .scroll-header dari main.js) navbar mengecil dengan halus.
+   Mobile tidak terpengaruh karena navbar ada di bawah layar. */
+@media screen and (min-width: 767px) {
+  :root {
+    --nav-h: 4.5rem;      /* tinggi navbar saat scroll (compact) */
+    --nav-h-top: 6rem;    /* tinggi navbar saat di paling atas */
+  }
+
+  /* Klik menu: judul section berhenti di bawah navbar, tidak tertutup */
+  html {
+    scroll-padding-top: calc(var(--nav-h) - 2.5rem);
+  }
+
+  /* Tanpa garis/bayangan saat mengecil agar terlihat clean
+     (bayangan tetap ada di mobile sebagai pemisah navbar bawah) */
+  .header.scroll-header {
+    box-shadow: none;
+  }
+
+  .nav {
+    height: var(--nav-h);
+    transition: height 0.4s ease;
+  }
+
+  .header:not(.scroll-header) .nav {
+    height: var(--nav-h-top);
+  }
+
+  .nav__logo {
+    display: inline-block;
+    transform-origin: left center;
+    transition: transform 0.4s ease;
+  }
+
+  .header:not(.scroll-header) .nav__logo {
+    transform: scale(1.2);
+  }
+
+  /* Konten Home tidak tertutup navbar yang lebih tinggi */
+  .section.home {
+    padding-top: calc(var(--nav-h-top) + 1rem);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --nav-h: 5rem;
+    --nav-h-top: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  :root {
+    --nav-h: 8rem;
+    --nav-h-top: 10rem;
+  }
+}
+
+/* ---------- 5. SCROLLBAR PROJECTS ---------- */
+/* Scrollbar list & panel detail mengikuti warna tema (light/dark otomatis) */
+/* Firefox (tidak mendukung ::-webkit-scrollbar) */
+@supports not selector(::-webkit-scrollbar) {
+  .projects__list,
+  .project__body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--first-color) var(--input-color);
+  }
+}
+
+/* Chrome, Edge, Safari */
+
+.projects__list::-webkit-scrollbar,
+.project__body::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+.projects__list::-webkit-scrollbar-track,
+.project__body::-webkit-scrollbar-track {
+  background-color: var(--input-color);
+  border-radius: 1rem;
+  margin: 0.75rem 0;
+}
+
+.projects__list::-webkit-scrollbar-thumb,
+.project__body::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+  border-radius: 1rem;
+}
+
+.projects__list::-webkit-scrollbar-thumb:hover,
+.project__body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--first-color-second);
+}
+
+/* ---------- 6. SCROLL UP BUTTON (desktop) ---------- */
+@media screen and (min-width: 1023px) {
+  .scrollup {
+    --scrollup-gap: 2rem;
+    bottom: var(--scrollup-gap);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .scrollup {
+    --scrollup-gap: 3rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .scrollup__icon {
+    font-size: 2.25rem;
+  }
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+/* Desktop: master-detail, detail project aktif tampil di panel kanan */
+@media screen and (min-width: 1023px) {
+  .projects__panel {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: 1.5rem;
+    height: 32rem;
+  }
+
+  .projects__list {
+    max-height: none;
+    height: 100%;
+  }
+
+  .project__item.is-active .project__body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: calc((100% - 1.5rem) * 0.4 + 1.5rem);
+    height: 100%;
+    overflow-y: auto;
+    align-content: start;
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    padding: 1.75rem;
+  }
+
+  .project__body .project__client {
+    display: flex;
+  }
+
+  .project__body .project__title {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .projects__panel {
+    height: 34rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .lang-btn {
+    font-size: 1.5rem;
+    padding: 0.4rem 1rem;
+  }
+}
