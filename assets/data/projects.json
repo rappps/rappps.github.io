@@ -1,0 +1,424 @@
+{
+  "clients": {
+    "sbs": {
+      "name": "PT. Satria Bahana Sarana"
+    },
+    "pln": {
+      "name": "PT. PLN Nusantara Power (PT. Pembangkit Jawa Bali)",
+      "short": "PT. PLN Nusantara Power"
+    },
+    "ldu": {
+      "name": "PT. Laju Dinamika Utama"
+    },
+    "mba": {
+      "name": "PT. Mitrabara Adiperdana Tbk"
+    },
+    "bssr": {
+      "name": "PT. Baramulti Suksessarana Tbk"
+    },
+    "bmi": {
+      "name": "PT. Bukit Multi Investama"
+    },
+    "mkp": {
+      "name": "PT. Mitra Karya Prima"
+    },
+    "dh": {
+      "name": "PT. Darma Henwa Tbk"
+    },
+    "ind": {
+      "name": "PT. Indexim Coalindo"
+    }
+  },
+  "projects": [
+    {
+      "client": "sbs",
+      "title": "Ellipse Cloud Migration",
+      "location": "Tanjung Enim",
+      "period": "Sep 2026 - Present",
+      "description": "Migrating Ellipse EAM from an on-premise server to an Oracle cloud server.",
+      "tags": [
+        "Ellipse EAM",
+        "Oracle Cloud",
+        "Technical Consultant"
+      ],
+      "responsibilities": [
+        "Troubleshooting errors that occur during the server migration process.",
+        "Making sure every component of the on-premise system runs properly on the cloud server."
+      ],
+      "images": [
+        "assets/img/projects/ellipse-cloud-migration.jpg"
+      ]
+    },
+    {
+      "client": "sbs",
+      "title": "Data Warehouse and HPP / Asset Management Dashboard",
+      "location": "Tanjung Enim",
+      "period": "Jan 2026 - Sep 2026",
+      "description": "Centralizing data from multiple sources to improve decision making and data analysis and reporting capabilities for PT SBS.",
+      "tags": [
+        "PostgreSQL",
+        "Pentaho",
+        "Rundeck",
+        "Power BI"
+      ],
+      "responsibilities": [
+        "Built a data warehouse from the Ellipse and CISEA applications using PostgreSQL.",
+        "Built ETL and data pipelines using Pentaho Data Integration.",
+        "Built the ETL orchestrator and ETL monitoring using Rundeck.",
+        "Built the HPP (cost of goods) dashboard and the Asset Management dashboard using Power BI."
+      ],
+      "images": [
+        "assets/img/projects/dashboard_hpp_sbs.png",
+        "assets/img/projects/dashboard_asset_sbs.png"
+      ]
+    },
+    {
+      "client": "sbs",
+      "title": "Chart of Account (CoA) Restructuring",
+      "location": "Tanjung Enim",
+      "period": "Dec 2025 - Jan 2026",
+      "description": "Adjusting the account structure to be more detailed in the cost recording mechanism so that cost analysis can be done better and more accurately.",
+      "tags": [
+        ".NET Framework",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Troubleshooting errors during the CoA data cleansing and uploading process."
+      ],
+      "images": [
+        "assets/img/projects/chart-of-account-coa-restructuring.jpg"
+      ]
+    },
+    {
+      "client": "sbs",
+      "title": "Technical Training",
+      "location": "Tanjung Enim",
+      "period": "Sep 2024",
+      "description": "Training on bulk data upload to the Ellipse system.",
+      "tags": [
+        ".NET Framework",
+        "Visual Studio 2022"
+      ],
+      "responsibilities": [
+        "Delivered training on bulk data upload to Ellipse using .NET Framework and Visual Studio 2022."
+      ],
+      "images": [
+        "assets/img/projects/technical-training.jpg"
+      ]
+    },
+    {
+      "client": "pln",
+      "title": "Deadstock Dashboard and Recommended Order Monitoring",
+      "location": "Surabaya",
+      "period": "Aug 2026 - Oct 2026",
+      "description": "Developing deadstock inventory monitoring for all power plant units of PT. PLN Nusantara Power, plus a dashboard to monitor the Recommended Order process.",
+      "tags": [
+        "Tableau",
+        "Talend"
+      ],
+      "responsibilities": [
+        "Improved the inventory dashboard to show recommended order and deadstock monitoring using Tableau.",
+        "Built the ETL and data pipelines for the deadstock and recommended order monitoring dashboards using Talend."
+      ],
+      "images": [
+        "assets/img/projects/deadstock-dashboard-and-recommended-order-monitoring.jpg"
+      ]
+    },
+    {
+      "client": "pln",
+      "title": "Fixed Asset Fiscal Data Migration and Audit Adjustment",
+      "location": "Surabaya",
+      "period": "Aug 2026 - Sep 2026",
+      "description": "Recording fiscal assets related to inventory and consolidated asset reporting to Danantara regarding At Cost values.",
+      "tags": [
+        ".NET Framework",
+        "Jasper iReport",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Modified asset data reports using Jasper iReport."
+      ],
+      "images": [
+        "assets/img/projects/fixed-asset-fiscal-data-migration-and-audit-adjustment.jpg"
+      ]
+    },
+    {
+      "client": "pln",
+      "title": "Inventory Dashboard Improvement",
+      "location": "Surabaya",
+      "period": "Apr 2026 - Aug 2026",
+      "description": "Improving the inventory dashboard to show inventory receipts and issues, inventory value, service level, inventory turnover and deadstock.",
+      "tags": [
+        "Talend",
+        "Tableau",
+        "Jasper iReport"
+      ],
+      "responsibilities": [
+        "Built the ETL for the required inventory data using Talend.",
+        "Modified the inventory dashboard using Tableau.",
+        "Modified the inventory detail data report using Jasper iReport."
+      ],
+      "images": [
+        "assets/img/projects/inventory-dashboard-improvement.jpg"
+      ]
+    },
+    {
+      "client": "pln",
+      "title": "Inventory Category Implementation",
+      "location": "Surabaya",
+      "period": "Dec 2025 - Jun 2026",
+      "description": "Implementing inventory category grouping to make inventory easier to manage.",
+      "tags": [
+        ".NET Framework",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Developed a report to monitor inventory category data."
+      ],
+      "images": [
+        "assets/img/projects/inventory-category-implementation.jpg"
+      ]
+    },
+    {
+      "client": "pln",
+      "title": "Ellipse Update Patches 9.0.46",
+      "location": "Surabaya",
+      "period": "Mar 2025 - Aug 2025",
+      "description": "Resolving issues and requirements in operating Ellipse EAM, and making sure all Ellipse-specific components and integrations work as intended so business processes run smoothly and Ellipse data and reporting stay reliable.",
+      "tags": [
+        ".NET Framework",
+        "Jasper iReport",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Modified reports for operational and management reporting using Jasper iReport.",
+        "Troubleshooting and making sure no system component failed during the Ellipse version upgrade."
+      ],
+      "images": [
+        "assets/img/projects/ellipse-update-patches-9-0-46.jpg"
+      ]
+    },
+    {
+      "client": "ldu",
+      "title": "Laju Dinamika Utama Ellipse 9 Implementation",
+      "location": "Balikpapan",
+      "period": "Sep 2024 - Mar 2025",
+      "description": "Improving the company's ability to control its business by producing report information that supports decision making.",
+      "tags": [
+        ".NET Framework",
+        "Power BI",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Developed reports for operational and management reporting using Power BI Report.",
+        "Led the technical team during the Ellipse implementation."
+      ],
+      "images": [
+        "assets/img/projects/laju-dinamika-utama-ellipse-9-implementation.jpg"
+      ]
+    },
+    {
+      "client": "mba",
+      "title": "Mitrabara Finance Digitalization",
+      "location": "Jakarta",
+      "period": "Mar 2026 - Present",
+      "description": "Digitalizing finance business processes that still involve manual, time-consuming and error-prone activities. Data is scattered across many sources, requiring repeated reconciliation to ensure accuracy.",
+      "tags": [
+        ".NET Framework",
+        "Power BI",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Developed reports for operational and management reporting using Power BI Report.",
+        "Troubleshooting errors in the Ellipse system."
+      ],
+      "images": [
+        "assets/img/projects/mitrabara-finance-digitalization.jpg"
+      ]
+    },
+    {
+      "client": "mba",
+      "title": "Ellipse Roll Out - Operation at Baramulti Terminal Service (BTS)",
+      "location": "Jakarta",
+      "period": "Sep 2025 - Jan 2026",
+      "description": "Implementing the system across technology, business, finance, technical and operational aspects to produce comprehensive reporting based on the company's KPIs and to support strategic decision making.",
+      "tags": [
+        ".NET Framework",
+        "Power BI",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Developed reports for operational and management reporting using Power BI Report.",
+        "Troubleshooting errors in the Ellipse system."
+      ],
+      "images": [
+        "assets/img/projects/ellipse-roll-out-operation-at-baramulti-terminal-service-bts.jpg"
+      ]
+    },
+    {
+      "client": "mba",
+      "title": "Ellipse Mine Operation Optimization (Baramulti MMM)",
+      "location": "Jakarta",
+      "period": "Jul 2025 - Feb 2026",
+      "description": "Improving the efficiency, accuracy and integration of real-time mining activity recording and monitoring using the Mobile Mine Operation Application, a digital solution developed by PT EMS Paramitra to support mining operations at PT Mitra Muda Makmur.",
+      "tags": [
+        "Flutter",
+        ".NET Framework",
+        "Mobile App"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Developed the mobile app frontend using Flutter.",
+        "Troubleshooting errors in the Ellipse system."
+      ],
+      "images": [
+        "assets/img/projects/ellipse-mine-operation-optimization-baramulti-mmm.jpg"
+      ]
+    },
+    {
+      "client": "mba",
+      "title": "Baramulti Marine Group Ellipse 9 Implementation",
+      "location": "Jakarta",
+      "period": "Sep 2023 - Sep 2024",
+      "description": "Implementing Ellipse Enterprise Asset Management (EAM) to support operational transaction recording in a system that works together with the Baramulti Marine Group business units.",
+      "tags": [
+        "SQL Server",
+        "SSIS",
+        "SQL Agent",
+        "Power BI",
+        ".NET Framework",
+        "Groovy"
+      ],
+      "responsibilities": [
+        "Led the technical team during the system implementation.",
+        "Built a data warehouse using SQL Server.",
+        "Built ETL and data pipelines using SQL Server Integration Services (SSIS).",
+        "Built the ETL scheduler using SQL Agent.",
+        "Developed dashboards using Power BI for managerial and operational needs.",
+        "Developed reports for operational and management reporting using Power BI Report.",
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Built custom functions for the Ellipse system using Groovy Script.",
+        "Troubleshooting errors in the Ellipse system."
+      ],
+      "images": [
+        "assets/img/projects/baramulti-marine-group-ellipse-9-implementation.jpg"
+      ]
+    },
+    {
+      "client": "bssr",
+      "title": "Data Warehouse Implementation at PT AGM and PT BSSR",
+      "location": "Jakarta",
+      "period": "Jun 2024 - Dec 2024",
+      "description": "Implementing a data warehouse to improve data analysis and reporting capabilities for PT AGM and PT BSSR (Baramulti Group), centralizing data from multiple sources and improving decision making.",
+      "tags": [
+        "SQL Server",
+        "SSIS",
+        "SSAS",
+        "SQL Agent",
+        "Power BI"
+      ],
+      "responsibilities": [
+        "Built a data warehouse using SQL Server.",
+        "Built ETL and data pipelines using SQL Server Integration Services (SSIS).",
+        "Built the ETL scheduler using SQL Agent.",
+        "Built the data model using SQL Server Analysis Services (SSAS).",
+        "Developed dashboards using Power BI."
+      ],
+      "images": [
+        "assets/img/projects/data-warehouse-implementation-at-pt-agm-and-pt-bssr.jpg"
+      ]
+    },
+    {
+      "client": "bmi",
+      "title": "PT. Bukit Multi Investama (BMI) Ellipse 9 Finance Implementation",
+      "location": "Jakarta",
+      "period": "Aug 2023 - Nov 2023",
+      "description": "Getting fast information on financial transaction recording so management has more accurate and faster information for financial reporting.",
+      "tags": [
+        "Jasper iReport",
+        ".NET Framework",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Built custom finance reports such as profit and loss, cash flow, general ledger, trial balance, equity and balance sheet using Jasper iReport.",
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Troubleshooting errors in the Ellipse system."
+      ],
+      "images": [
+        "assets/img/projects/pt-bukit-multi-investama-bmi-ellipse-9-finance-implementation.jpg"
+      ]
+    },
+    {
+      "client": "mkp",
+      "title": "Mitra Karya Prima Ellipse 9 Upgrade",
+      "location": "Jakarta",
+      "period": "Aug 2022 - Dec 2022",
+      "description": "Keeping the company's Ellipse business processes running smoothly and maintaining the reliability and availability of the Ellipse application services.",
+      "tags": [
+        "Jasper iReport",
+        ".NET Framework",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Delivered report development training using Jasper iReport to the client's IT team.",
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Built custom reports using Jasper iReport.",
+        "Troubleshooting errors in the Ellipse system."
+      ],
+      "images": [
+        "assets/img/projects/mitra-karya-prima-ellipse-9-upgrade.jpg"
+      ]
+    },
+    {
+      "client": "dh",
+      "title": "PT. Darma Henwa SCM and FA Ellipse 9 Enhancement",
+      "location": "Jakarta",
+      "period": "Apr 2022 - Dec 2023",
+      "description": "Improving efficiency and accuracy in inventory management and the procurement-to-payment process.",
+      "tags": [
+        ".NET Framework",
+        "Jasper iReport",
+        "XML",
+        "Groovy"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Built custom reports using Jasper iReport.",
+        "Built custom functions in the Ellipse system using XML and Groovy Script.",
+        "Troubleshooting errors in the Ellipse system."
+      ],
+      "images": [
+        "assets/img/projects/pt-darma-henwa-scm-and-fa-ellipse-9-enhancement.jpg"
+      ]
+    },
+    {
+      "client": "ind",
+      "title": "Indexim - KMIA Ellipse Smart Mining Implementation",
+      "location": "Jakarta",
+      "period": "Feb 2022 - Mar 2024",
+      "description": "Providing implementation services and software to support the effectiveness and efficiency of Indexim Coalindo's business processes with the Ellipse Enterprise EAM/ERP and Smart Mining software.",
+      "tags": [
+        ".NET Framework",
+        "Jasper iReport",
+        "Power BI",
+        "Ellipse EAM"
+      ],
+      "responsibilities": [
+        "Built a tool for bulk data upload to Ellipse using .NET Framework.",
+        "Built custom reports using Jasper iReport.",
+        "Developed dashboards using Power BI for managerial and operational needs.",
+        "Troubleshooting errors in the Ellipse system."
+      ],
+      "images": [
+        "assets/img/projects/indexim-kmia-ellipse-smart-mining-implementation.jpg"
+      ]
+    }
+  ]
+}
